@@ -1,0 +1,10 @@
+/.dccache
+/.vscode
+/cognito
+/get_auth_s3
+/go.mod
+/go.sum
+/hello
+/init-db.go
+/movies.json
+/prueba
