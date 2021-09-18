@@ -22,7 +22,7 @@ func authToken(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRes
 	err := json.Unmarshal([]byte(request.Body), &user)
 	if err != nil {
 		return events.APIGatewayProxyResponse{
-			StatusCode: 400,
+			StatusCode: http.StatusBadRequest,
 			Body:       "Invalid payload",
 		}, nil
 	}
